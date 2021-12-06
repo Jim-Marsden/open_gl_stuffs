@@ -15,5 +15,5 @@ set(imgui_backend
         imgui_backend/imgui_impl_opengl3.h
         )
 
-add_executable(open_gl_stuffs main.cpp ${imgui_backend})
+add_executable(open_gl_stuffs main.cpp imgui_mgr.cpp imgui_mgr.h ${imgui_backend})
 target_link_libraries(open_gl_stuffs ${CONAN_LIBS})
